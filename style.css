@@ -1,0 +1,109 @@
+* {}
+
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #c02e66, #0d526b, #0e8166);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    padding: 2%;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+#container {
+    height: 80%;
+    width: 90vw;
+    display: flex;
+
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 4dvw;
+}
+
+#logo {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9%;
+    border-radius: 45px;
+}
+
+.contDiv {
+
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    border-radius: 23px;
+    margin: auto;
+    margin-top: 4em;
+    justify-content: space-between;
+    width: 60vw;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: whitesmoke;
+    min-width: fit-content;
+}
+
+
+button {
+    border: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(110%);
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    cursor: grab;
+}
+
+
+.social {
+    background-color: aliceblue;
+    border-radius: 45%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 4%;
+}
+
+@media screen and (max-width: 735px) {
+    #logo {
+        width: 20%;
+    }
+
+    .social {
+        width: 8%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .social {
+        margin-top: 1%;
+        margin-bottom: 1%;
+
+        width: 8%;
+    }
+}
